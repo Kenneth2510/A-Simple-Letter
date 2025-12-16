@@ -6,7 +6,7 @@ type LoginPageProps = {
 };
 
 export const LoginPage = ({ onLogin }: LoginPageProps) => {
-const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
   const [shake, setShake] = useState(false);
 
@@ -24,8 +24,8 @@ const [password, setPassword] = useState("");
     }
   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
       handleSubmit();
     }
   };
@@ -39,8 +39,8 @@ const [password, setPassword] = useState("");
     >
       {/* Subtle ambient glow */}
       <div className="absolute inset-0 bg-gradient-radial from-white/5 via-transparent to-transparent opacity-30" />
-      
-      <motion.div 
+
+      <motion.div
         className="w-full max-w-sm flex flex-col items-center space-y-10 relative z-10"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -51,7 +51,11 @@ const [password, setPassword] = useState("");
           className="relative"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8, ease: [0.34, 1.56, 0.64, 1] }}
+          transition={{
+            delay: 0.5,
+            duration: 0.8,
+            ease: [0.34, 1.56, 0.64, 1],
+          }}
         >
           <div className="w-32 h-32 rounded-full bg-gradient-to-br from-white/10 to-white/5 p-0.5">
             <div className="w-full h-full rounded-full bg-black p-1">
