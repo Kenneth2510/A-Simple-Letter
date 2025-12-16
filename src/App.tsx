@@ -66,7 +66,7 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
             <div className="w-full h-full rounded-full bg-black p-1">
               <div className="w-full h-full rounded-full overflow-hidden border border-white/20">
                 <div className="w-full h-full bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center text-white/40 text-xs">
-                  avatar
+                  <img src='/images/avatar_1.jpeg' alt="Avatar" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          You already know what to do.
+          Yung username nung nakikihike sa mountains hahaha.
         </motion.p>
 
         {/* Input and button */}
@@ -332,9 +332,9 @@ const PikachuPage = ({ onNext }: PageProps) => {
             transition={{ duration: 0.6 }}
           >
             <div className="text-center space-y-3 p-8">
-              <div className="text-7xl">⚡</div>
+              {/* <div className="text-7xl">⚡</div> */}
               <p className="text-yellow-800/60 text-sm font-light">
-                Pikachu image here
+                <img src='/images/pikachu_1.jpeg' alt="Pikachu" className="mx-auto" />
               </p>
             </div>
           </motion.div>
@@ -472,9 +472,9 @@ const TulipsPage = ({ onNext }: PageProps) => {
             transition={{ duration: 0.7 }}
           >
             <div className="text-center space-y-3 p-8">
-              <div className="text-7xl">🌷</div>
+              {/* <div className="text-7xl">🌷</div> */}
               <p className="text-pink-700/60 text-sm font-light">
-                Tulips image here
+                <img src='/images/pink_tulips_bg.jpeg' alt="Tulips" className="mx-auto" />
               </p>
             </div>
           </motion.div>
