@@ -44,7 +44,7 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
     >
       {/* Subtle ambient glow */}
       <div className="absolute inset-0 bg-gradient-radial from-white/5 via-transparent to-transparent opacity-30" />
-    
+
       <motion.div
         className="w-full max-w-sm flex flex-col items-center space-y-10 relative z-10"
         initial={{ y: 20, opacity: 0 }}
@@ -66,7 +66,11 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
             <div className="w-full h-full rounded-full bg-black p-1">
               <div className="w-full h-full rounded-full overflow-hidden border border-white/20">
                 <div className="w-full h-full bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center text-white/40 text-xs">
-                  <img src='/images/avatar_1.jpeg' alt="Avatar" className="w-full h-full object-cover" />
+                  <img
+                    src="/images/avatar_1.jpeg"
+                    alt="Avatar"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -190,10 +194,12 @@ const IntroPage = ({ onNext }: PageProps) => {
       <section className="px-6 pb-32">
         <div className="max-w-lg mx-auto space-y-16">
           {[
-            "This is just filler text for now, but imagine this being the start of a long message. Something you don't rush through. Something you read slowly, maybe while scrolling with one hand, taking pauses in between.",
-            "The idea here is that the page doesn't feel heavy. Even if the message is long, the spacing, pacing, and motion make it feel light. Each paragraph appears as you reach it, almost like the letter is revealing itself little by little.",
-            "You can add as many paragraphs as you want here. The layout is designed to handle long messages without feeling overwhelming. The user scrolls, reads, pauses, and continues at their own pace.",
-            "This is where the emotional weight slowly builds. No loud visuals yet. No bright colors. Just words, space, and a quiet black background.",
+            "Usually di ako nagawa ng letters para sa ibang tao, pero right now, I feel na gusto ko magsulat ngayon hahaha. This letter was supposedly na for Christmas greetings lang, pero might as well make this as my way of showing gratitude before the year ends. At this point of time, many events has been experienced, was able to meet many people, and many memories has been many. Truly, I am feeling grateful to be part of those pieces that made significant changes to my current self.",
+            "Might as well take the opportunity to say my apologies if ever that I have become a hassle, or cause any discomforts sayo. There was a time ata na nasagi ata kita non then di na ako nakapag sorry or what, which ended with me feeling so guilty that I cannot even look at people non.",
+            "Anyways, intro pa lang naman to so eme eme lang muna hahahah. By the way, if you are wondering na bakit website and hindi handwritten, maraming factors kase yon haha. First ayaw ko pumatay ng maraming puno every time na gagamit ako ng paper, then if ever na magsulat man me, kung pede lang magsalita yung ballpen baka ma mura na ren ako non sa panget na sulat ko hahaha",
+            "Then yung mga kasama don sa bag, feel free kung ano gusto mo gawin don hahaha, no need to return it ok? if don't want it, simply throw it away or pamigay mo na langs sa ibaa. If ever you did wonder kung andami ko nanaman ba ginastos dyan, don't worry I was able to take the majority at discounted price or libre kaya no worries HAHAHAH",
+            "This is based on my perspective, on my side, on how did I see those things so please take it with a grain of salt hahaha. Also, this is not meant to be a formal letter, so please expect na may mga parts na medyo corny hahaha. Just go with the flow lang hahaha.",
+            "So game next page tara? lezzgoo!",
           ].map((text, i) => (
             <motion.p
               key={i}
@@ -282,7 +288,7 @@ const PikachuPage = ({ onNext }: PageProps) => {
             delay: i * 0.5,
           }}
         >
-          ⚡🐭
+          ⚡
         </motion.div>
       ))}
 
@@ -294,7 +300,7 @@ const PikachuPage = ({ onNext }: PageProps) => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: [0.34, 1.56, 0.64, 1] }}
           >
-            Pikachu
+            Uy Yellow! parang Pikachu nga noh?
           </motion.h1>
 
           <motion.div
@@ -304,10 +310,10 @@ const PikachuPage = ({ onNext }: PageProps) => {
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             <p className="text-yellow-800 text-lg">
-              This part feels energetic.
+              Or Zenitsu? Thunder den naman.
             </p>
-            <p className="text-yellow-800 text-lg">Bright.</p>
-            <p className="text-yellow-800 text-lg">Hard to ignore.</p>
+            <p className="text-yellow-800 text-lg">Ewan.</p>
+            <p className="text-yellow-800 text-lg">Basta yon hahah.</p>
           </motion.div>
 
           <motion.div
@@ -334,15 +340,19 @@ const PikachuPage = ({ onNext }: PageProps) => {
             <div className="text-center space-y-3 p-8">
               {/* <div className="text-7xl">⚡</div> */}
               <p className="text-yellow-800/60 text-sm font-light">
-                <img src='/images/pikachu_1.jpeg' alt="Pikachu" className="mx-auto" />
+                <img
+                  src="/images/pikachu_1.jpeg"
+                  alt="Pikachu"
+                  className="mx-auto"
+                />
               </p>
             </div>
           </motion.div>
 
           {[
-            "This is where the long message starts. Think of this as the part where everything feels lighter. Like laughter that comes easily, or moments that don't need explanation. The kind of energy that just exists.",
-            "Even if the message gets long, the colors and motion keep it from feeling heavy. Each paragraph arrives with a bit of life — nothing jumps out aggressively, but nothing feels dull either.",
-            "This page is meant to feel like warmth. Like sunlight. Like something that gives energy instead of taking it away.",
+            "First of all, I want to say thank you to meet you even though we are both new employees sa work. I do remember nung onboarding, nakikita ko kayo ni Stacey na nagdadaldalan during that time, and it so happen na don den kami puwesto nung kawork ko na yon halos recently ko lang den nakilala hahaha. Then, alam mo ba, napag tripan ako non nila Sir Philip nong time na nag add friend kami sa fb, after nung isang day during onboarding ata, inano phone ko tapos kung sino sino ni add friend nya, nakaka hiya pero ganon nangyare non XD.",
+            "That was the time also, na still at shock with the new environment, and still on the personality na super loner, unlike ngayon hahaha. And that time so busy ren non na kase nag sabay sabay application ko sa tatlo, work, masters, and as part time instructor. Di ko alam kung pano ko napag kasya but I guess I'm still alive pa naman hahaha. I remember na bigla lang u nag reply ata sa story ko non na nababaliw ng madaling araw then yon na yung una nating convo non hahaha. Tapos yung content, about chismis hay nako talaga ohhh HAHAHAHAHAH. Also don ko ren nalaman na fan ka ng pokemon, or more likely kay Pikachu, kaya yon yung design neto",
+            "Actually nung dumaan me sa One Ayala, bigla lang den sya bumungad don so na intriga na ako don hahaha. Nagdadalawang isip pa nga ako nyan kung bibilhin ko kasi di ko sure kung safe lang ba yon or makakapag trigger ng allergy gawa ng mga lints. Anyways nabili ko na so I guess late na para pag isipan pa muli",
           ].map((text, i) => (
             <motion.p
               key={i}
@@ -355,6 +365,25 @@ const PikachuPage = ({ onNext }: PageProps) => {
               {text}
             </motion.p>
           ))}
+
+          <motion.div
+            className="w-full max-w-xs mx-auto aspect-square rounded-2xl bg-yellow-400/30 border-2 border-yellow-500/40 flex items-center justify-center overflow-hidden"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="text-center space-y-3 p-8">
+              {/* <div className="text-7xl">⚡</div> */}
+              <p className="text-yellow-800/60 text-sm font-light">
+                <img
+                  src="/images/fa40169f-eba7-42d7-a676-227a6b5e2252 (1).jpeg"
+                  alt="Pikachu"
+                  className="mx-auto"
+                />
+              </p>
+            </div>
+          </motion.div>
 
           <motion.div
             className="pt-20"
@@ -428,10 +457,12 @@ const TulipsPage = ({ onNext }: PageProps) => {
             transition={{ delay: 0.2, duration: 0.9 }}
           >
             <p className="text-pink-700/80 text-lg font-light">
-              This part is quieter.
+              Yung color pink daw hahaha.
             </p>
-            <p className="text-pink-700/80 text-lg font-light">Slower.</p>
-            <p className="text-pink-700/80 text-lg font-light">Softer.</p>
+            <p className="text-pink-700/80 text-lg font-light">
+              Ilan ba petals non? di ko sure.
+            </p>
+            <p className="text-pink-700/80 text-lg font-light">hahahaha.</p>
           </motion.div>
 
           <motion.div
@@ -448,8 +479,8 @@ const TulipsPage = ({ onNext }: PageProps) => {
       <section className="px-6 pb-32">
         <div className="max-w-lg mx-auto space-y-16">
           {[
-            "Imagine this part being read slowly. The kind of message that doesn't demand attention, but gently asks for it. Nothing here rushes you. Everything waits until you're ready.",
-            "Tulips don't bloom all at once. They take time. And this section is meant to feel like that — something that grows quietly, without pressure, without noise.",
+            "Next interaction, was during don sa month ng performers month ba yon, basta yung sayaw sayaw hahaha. Nagulat nga ako kasi nandon ka ren non, ang nasa isip ko na lang non naboboringan ako sa task ko sa LSD so mag liliw aliw muna ako hahaha. Hoy baka di mo pa nadedelete yung nivideo mo ko don ahh hahaha, nakakahiyaaa hahahah. Then guess what? nag kwentuhan nanaman tayo about another chismis ulet, so niceee HAHAHAHHAHA, sana di pa tayo minumura ng mga tao naging biktima ng chismis hahahah.",
+            "Then yon na nag tuloy tuloy na, nagulat pa nga ako non kasi kala ko nag jojoke ka lang na manlilibre ka hahahah ehh si go naman den ako kaya ayon ahahah. Ang awkward ko non, sorri na hahaha wala akong sense of focus hahaha not sure pero what if nasa mental spectrum pala ako kasama ng mga may ADHD? sana wala di ren ako sure ehh hahaha",
           ].map((text, i) => (
             <motion.p
               key={i}
@@ -474,14 +505,17 @@ const TulipsPage = ({ onNext }: PageProps) => {
             <div className="text-center space-y-3 p-8">
               {/* <div className="text-7xl">🌷</div> */}
               <p className="text-pink-700/60 text-sm font-light">
-                <img src='/images/pink_tulips_bg.jpeg' alt="Tulips" className="mx-auto" />
+                <img
+                  src="/images/3adf211f-8582-408b-8fec-bb4cfb4ea625.jpeg"
+                  alt="Tulips"
+                  className="mx-auto"
+                />
               </p>
             </div>
           </motion.div>
 
           {[
-            "The spacing here matters. The pauses between paragraphs matter. It's okay to stop scrolling for a moment. Nothing disappears. Everything stays.",
-            "This section is about comfort. About calm presence. About being there, even in silence.",
+            "Then sunod is yung nanood ng Demon Slayer (tagal ng next part hayst haha), sa Esplanade foodtrip hahaha, then sa museum tapos nag patakot sa conjuring XD, tapos yung mga hiking sa roblox at 99 nights na di natin maabot yung one thousandth day HAHAHAHAHAH, and most memorable sakin yung nag Boogie Bounce. For someone like me, never ko talaga nicecelebrate yung birthday ko and prefer ko na unahin na lang yung sa kapatid ko, so literally that was a first for me, and super nag enjoy talaga me nung time na yon.",
           ].map((text, i) => (
             <motion.p
               key={`p2-${i}`}
@@ -494,6 +528,61 @@ const TulipsPage = ({ onNext }: PageProps) => {
               {text}
             </motion.p>
           ))}
+
+          {/* Image placeholder for Tulips */}
+          <motion.div
+            className="w-full max-w-sm mx-auto aspect-[4/3] rounded-2xl bg-pink-100/60 border-2 border-pink-300/50 flex items-center justify-center overflow-hidden"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="text-center space-y-3 p-8">
+              {/* <div className="text-7xl">🌷</div> */}
+              <p className="text-pink-700/60 text-sm font-light">
+                <img
+                  src="/images/4bcbec9e-9232-4522-bee4-d353579c85db.jpeg"
+                  alt="Tulips"
+                  className="mx-auto"
+                />
+              </p>
+            </div>
+          </motion.div>
+
+          {[
+            "Yon den yung time na may arts event dibaa? naiinggit ren ako non kasi may pa arts arts kayo na ginagawa non, so gumawa na lang den ako ng pansarili ko, hahaha ew loner mindset XD pero satisfied naman ako sa gawa ko non hahaha.",
+          ].map((text, i) => (
+            <motion.p
+              key={`p2-${i}`}
+              className="leading-loose text-pink-800/90 text-base font-light"
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.9, delay: i * 0.1 }}
+            >
+              {text}
+            </motion.p>
+          ))}
+
+          {/* Image placeholder for Tulips */}
+          <motion.div
+            className="w-full max-w-sm mx-auto aspect-[4/3] rounded-2xl bg-pink-100/60 border-2 border-pink-300/50 flex items-center justify-center overflow-hidden"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="text-center space-y-3 p-8">
+              {/* <div className="text-7xl">🌷</div> */}
+              <p className="text-pink-700/60 text-sm font-light">
+                <img
+                  src="/images/39431d02-5f9c-4081-812e-00f881872357.jpeg"
+                  alt="Tulips"
+                  className="mx-auto"
+                />
+              </p>
+            </div>
+          </motion.div>
 
           <motion.div
             className="pt-24"
@@ -567,9 +656,14 @@ const PinkPage = ({ onNext }: PageProps) => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            This is where the message becomes personal. Not in a dramatic way,
-            but in a real one. The kind of honesty that doesn't need to be loud
-            to be felt.
+            But really, I am really grateful for those memories, I never did
+            expected na magiging ganon ako ka active for this year. I was
+            supposedly to be a silent, loner-type, cold-hearted, person who does
+            not even know how to express any feelings or emotions. Yeah, never
+            den naman ako lumaki sa environment na may mga ganon, but it does
+            not mean na ma stuck na lang ako sa ganon, I want to change, I guess
+            hindi ko nabigo yung sarili ko as right now, I can see changes on my
+            self, wala pa don sa fully expressive pero still trying me best.
           </motion.p>
 
           {/* Image placeholder for Pink page - could be hearts, abstract art, or meaningful photo */}
@@ -583,7 +677,11 @@ const PinkPage = ({ onNext }: PageProps) => {
             <div className="text-center space-y-3 p-8">
               <div className="text-7xl">💗</div>
               <p className="text-white/70 text-sm font-light">
-                Meaningful image here
+                <img
+                  src="/images/501c6afc-5186-4109-84c4-2e3694726412.jpeg"
+                  alt="Tulips"
+                  className="mx-auto"
+                />
               </p>
             </div>
           </motion.div>
@@ -595,9 +693,11 @@ const PinkPage = ({ onNext }: PageProps) => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            These paragraphs are just placeholders for now, but imagine them
-            carrying the words you've been meaning to say. The kind of thoughts
-            that sit quietly until the right moment.
+            From a dark, pessimist perspective, I can see now other colors
+            blending with that color black, and actually it works for me. I now
+            see a different perspective unlike my selfish self from the old
+            days. It was totally new, and I do not want to reject it but rather
+            embrace it.
           </motion.p>
 
           <motion.div
@@ -608,7 +708,7 @@ const PinkPage = ({ onNext }: PageProps) => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-center text-xl md:text-2xl font-light text-white leading-relaxed">
-              Some things are easier to write than to say.
+              Tatawanan mo ba ako pag sinabi kong gusto kita? HAHAHAHA
             </p>
           </motion.div>
 
@@ -619,9 +719,50 @@ const PinkPage = ({ onNext }: PageProps) => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            That's why this page exists. To hold the words gently, without
-            pressure. To let them breathe. To let them be read at your pace, not
-            rushed, not skimmed.
+            But really, it does not limit into romantic perspective, since it
+            can be as a friend, as a coworker, and others. But either way, no
+            need for you to reply ok? It was my attempt to express those words,
+            and I'm not really asking for a response. reading this message of
+            mine makes me cringe already, but my hands and brain do not
+            collaborately work together na HAHAHHAHA
+          </motion.p>
+
+          {/* Image placeholder for Pink page - could be hearts, abstract art, or meaningful photo */}
+          <motion.div
+            className="w-full max-w-sm mx-auto aspect-square rounded-2xl bg-white/20 border-2 border-white/30 backdrop-blur-sm flex items-center justify-center overflow-hidden"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="text-center space-y-3 p-8">
+              <div className="text-7xl">💗</div>
+              <p className="text-white/70 text-sm font-light">
+                <img
+                  src="/images/07e78d05-c8df-4c88-9423-c28b1f89eb5e.jpeg"
+                  alt="Tulips"
+                  className="mx-auto"
+                />
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.p
+            className="leading-relaxed text-white/95 text-base"
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+          >
+            It just that I had just grown attached to those memories I have
+            experienced, to those little chats an so on. Feel ko pinagtatabuyan
+            mo na ako kasi soafer OA naman netung ferson na to hahaha. With
+            that, I want to say sorry to those sides of me, I am guilty beyond
+            reason for those cases hahahah. Promise di ko na gagawen yon hahaha.
+            Actually, kaya di rin me nag chchat lately kase ginawa ko na way to
+            atone those is to wait for message na lang instead of initiating,
+            kase feel ko nagiging uncomfy na yung mga tao sakin. Well hopefully
+            di pa naman Malala hahah.
           </motion.p>
 
           <motion.p
@@ -631,8 +772,9 @@ const PinkPage = ({ onNext }: PageProps) => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            This is the emotional center of everything you've read so far. After
-            this, things will begin to settle.
+            If ever that at this point you are now getting uncomfy with it, feel
+            free to not message me anymore, I will total understand and respect
+            it.
           </motion.p>
 
           <motion.div
@@ -769,8 +911,8 @@ const EndingPage = () => {
       <section className="px-6 pb-40 relative z-10">
         <div className="max-w-lg mx-auto space-y-16">
           {[
-            "This part can be as long as you want. A quiet ending doesn't mean a short one. Sometimes, the longest thoughts are the ones that need the most space.",
-            "There's no rush to leave this page. You can stop scrolling. You can reread a line. You can just sit here for a moment and let everything settle.",
+            "But then again nga, supposedly this letter is for Christmas Greeting hahahah. But actually nag dadalawang isip pa rin ako kasi di ako sure whether nag papractice ba sa religion mo ng Christmas kasi, baka makapag cause ako ng insult or ano, which I hope hindi. By the way, if you are wondering, although Roman Catholic ako, I am more like in a Cultural Catholicism (not sure pero I think dito ako belong hahaha).",
+            "I guess this letter is reaching its end. As the year ends, I would like to greet you a Merry Christmas and Advance Cheers for the New Year. This year has been a worthwhile year for me and sana sa iyo rin, and hoping for a more wonderful 2026 next year!",
           ].map((text, i) => (
             <motion.p
               key={i}
@@ -807,8 +949,8 @@ const EndingPage = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.9 }}
           >
-            Whatever this message meant to you — whether it made you smile,
-            think, or feel something quietly — that's enough.
+            Chat lang u if mag set u ng gala or ano ahh, G lang si ako dejok
+            hahahahah. Anyways, I guess this is a bye bye naaa! Adios!!!
           </motion.p>
 
           <motion.div
@@ -822,7 +964,7 @@ const EndingPage = () => {
               With all my heart,
             </p>
             <p className="text-white text-lg font-light tracking-wide">
-              — Your Name
+              — Kinit Meh
             </p>
           </motion.div>
         </div>
